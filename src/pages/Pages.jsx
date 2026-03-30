@@ -1,0 +1,102 @@
+function Introduction() {
+  return (
+    <>
+      <h2>Introduction</h2>
+
+      <figure>
+        <img
+          src="/images/trip.jpg"
+          alt="Photo of Alanah Little"
+          width="400"
+          loading="lazy"
+        />
+        <figcaption>
+          Visited the Aquarium in Japan with my boyfriend.
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          Hi! My name is Alanah Little. I’m a junior at UNC Charlotte studying
+          Computer Science with a focus on Human-Computer Interaction. I'm
+          interested in UX design, usability, and building products that feel
+          simple and helpful.
+        </p>
+      </section>
+
+      <h3>Fun Facts About Me</h3>
+      <ul>
+        <li>
+          <strong>Personal Background:</strong> I'm currently 20 years old. I
+          love traveling and trying new foods, and I enjoy improving my
+          front-end coding skills each semester.
+        </li>
+        <li>
+          <strong>Professional Background:</strong> I’m a Server Assistant at
+          Eddie V’s Prime Seafood (1 year 10 months). I also worked at Dick’s
+          Sporting Goods for 1 year, and I was a Taekwondo instructor for 5
+          years.
+        </li>
+        <li>
+          <strong>Academic Background:</strong> I'm a junior at UNC Charlotte
+          studying Computer Science with a focus in Human-Computer Interaction.
+          Before that, I attended high school in Garner, North Carolina.
+        </li>
+        <li>
+          <strong>Primary Work Computer:</strong> MacBook Pro M2 (13-inch).
+        </li>
+        <li>
+          <strong>Backup Work Computer / Location Plan:</strong> I can use a
+          loaner laptop from Atkins Library and work at my apartment or the
+          library.
+        </li>
+        <li>
+          <strong>Funny / Interesting Fact:</strong> I once won a pep rally dance
+          competition.
+        </li>
+        <li>
+          <strong>I’d also like to share:</strong> I was born in California.
+        </li>
+      </ul>
+
+      <h3>Courses I’m Taking &amp; Why</h3>
+      <ol>
+        <li>
+          <strong>Major Related Courses</strong>
+          <ol>
+            <li>ITSC 3688 - Computers and Their Impact on Society</li>
+            <li>ITIS 3135 - Front-End Web Application Development</li>
+            <li>ITSC 2600 - Career Development</li>
+            <li>ITSC 4350 - Design Prototyping</li>
+          </ol>
+        </li>
+        <li>
+          <strong>Math / Statistics</strong>
+          <ol>
+            <li>STAT 1220 - Elements of Statistics I</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h3>Favorite Quote</h3>
+      <blockquote>
+        “The real voyage of discovery consists not in seeking new landscapes,
+        but in having new eyes.”
+        <cite>
+          {" "}
+          — Marcel Proust (
+          <a
+            href="https://stanphelps.com/the-voyage-of-discovery-is-not-in-seeking-new-landscapes-but-in-having-new-eyes-marcel-proust/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source
+          </a>
+          )
+        </cite>
+      </blockquote>
+    </>
+  );
+}
+
+export default Introduction;
