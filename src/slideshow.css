@@ -1,0 +1,118 @@
+/* ============================================================
+   Slideshow styles
+   Add these rules to your existing CSS file, or import this
+   file into Slideshow.jsx if you're using CSS modules.
+   Author: Alanah Little
+   ============================================================ */
+
+.slideshow-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.slideshow-page h2 {
+  margin-bottom: 0.25rem;
+}
+
+.slideshow-source {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.slideshow-source a {
+  color: inherit;
+}
+
+/* Image frame */
+.slideshow-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #111;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.slideshow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  animation: slideFadeIn 0.35s ease;
+}
+
+@keyframes slideFadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Counter badge */
+.slideshow-counter {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.8rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+}
+
+/* Controls */
+.slideshow-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.slideshow-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.slideshow-controls button:hover:not(:disabled) {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.slideshow-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.slideshow-controls .btn-play {
+  background: #2a7a2a;
+  color: #fff;
+  border-color: #2a7a2a;
+}
+
+.slideshow-controls .btn-play:hover:not(:disabled) {
+  background: #226022;
+}
+
+.slideshow-controls .btn-stop {
+  background: #b83232;
+  color: #fff;
+  border-color: #b83232;
+}
+
+.slideshow-controls .btn-stop:hover:not(:disabled) {
+  background: #922828;
+}
+
+.slideshow-status {
+  text-align: center;
+  margin-top: 3rem;
+  color: #666;
+}

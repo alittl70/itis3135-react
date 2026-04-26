@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+ 
 import Home from "./pages/Home";
 import Introduction from "./pages/Introduction";
 import ITIS3135 from "./pages/itis3135";
@@ -10,12 +10,11 @@ import Documentation from "./pages/Documentation";
 import Product from "./pages/Product";
 import Contract from "./pages/Contract";
 import FCC from "./pages/FCC";
-
+import Slideshow from "./pages/Slideshow";
+ 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-
-
+ 
 function App() {
   return (
     <>
@@ -23,7 +22,7 @@ function App() {
         <h1>Alanah Little | Adventurous Lion</h1>
         <Navbar />
       </header>
-
+ 
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,12 +35,14 @@ function App() {
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/slideshow" element={<Slideshow />} />
         </Routes>
       </main>
-
+ 
       <Footer />
     </>
   );
 }
-
+ 
 export default App;
+ 
